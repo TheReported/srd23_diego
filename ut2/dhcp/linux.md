@@ -2,11 +2,16 @@
 
 ### **1. Instalación del servicio DHCP en Ubuntu Linux**
 
+- En la terminal pondremos el siguiente comando para instalarnos el servicio:
+`sudo apt-get install isc-dhcp-server`
+
+- Una vez se ha instalado el servicio, comprobaremos su funcionamiento:
+
 ![](img/103.png)
 
 ### **2. Configuración del servicio DHCP**
 
-- Para modificar el fichero de configuración del servicio DHCP nos pondremos como superusuario e iremos a la siguiente ruta `/etc/dhcp/` y editaremos el siguiente archivo:
+- Para modificar el fichero de configuración del servicio DHCP nos pondremos como super usuario e iremos a la siguiente ruta `/etc/dhcp/` y editaremos el siguiente archivo:
 
 ![](img/104.png)
 
