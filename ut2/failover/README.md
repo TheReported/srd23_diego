@@ -2,6 +2,7 @@
 
 ### **0. Preparativos**
 - Recordad de tener la MV en **Red interna**
+
 | MV     | IP     |
 | :------------- | :------------- |
 | Windows Server - peraza23ws | 172.19.23.11 |
