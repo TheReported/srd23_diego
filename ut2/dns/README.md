@@ -112,3 +112,7 @@
 - **ZBI**
 
 ![](img/036.png)
+
+## **7. Realizamos desde el cliente  algunas operaciones con nslookup tanto dentro como fuera de nuestra intranet**
+
+![](img/029.png)
