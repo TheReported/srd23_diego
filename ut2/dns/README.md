@@ -38,17 +38,24 @@
 
 ## **2. Configuraremos el servidor para ser servidor DNS Caché.**
 
-- Configuración de red:
+- **Configuración de red**:
 
-  - Servidor:
-  ![](img/037.png)
-  - Cliente:
+- **Servidor**:
+
+![](img/037.png)
+
+- **Cliente**:
+
 ![](img/038.png)
 
 - Comprobaremos el funcionamiento como caché DNS de ambas máquinas al acceder a sitios de Internet.
-  - Servidor:
+
+- **Servidor**:
+
 ![](img/041.png)
-  - Cliente:
+
+- **Cliente**:
+
 ![](img/042.png)
 
 #### **2.1 Configurar reenviadores de DNS con puerta de enlace actual y DNS público.**
