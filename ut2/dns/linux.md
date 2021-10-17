@@ -2,6 +2,8 @@
 
 ### **0. Configuración de red de la MV Servidor DNS**
 
+- Editaremos el siguiente fichero para que nuestro Servidor DNS, este configurado con IP estática, además añadiremos que él es el propio DNS.
+
 ![](img-linux/029.png)
 
 - Reiniciamos la MV y comrpobamos que se han guardado los cambios.
@@ -16,7 +18,7 @@
 
 ### **1. Indicaremos a Linux que el servidor DNS es él mismo ``(/etc/resolv.conf)``**
 
-- `sudo nano /etc/resol.conf`
+- `sudo nano /etc/resolv.conf`
 
 ![](img-linux/001.png)
 
@@ -70,7 +72,7 @@
 
 ### **5. Comprobaremos de que se resuelven todos los nombres desde la consola del servidor**
 
-- ZBD
+- **ZBD**
 
 ![](img-linux/017.png)
 
@@ -78,10 +80,12 @@
 
 - Algunos nombres no dan ping, ya que son ficticios.
 
-- ZBI
+- **ZBI**
 
 ![](img-linux/023.png)
 
 ### **6. Comprobamos desde el Cliente que se resuelven correctamente los nombres dados de alta en el servidor**
 
 ![](img-linux/030.png)
+
+***Hasta aquí queda por finalizada la actividad.***
