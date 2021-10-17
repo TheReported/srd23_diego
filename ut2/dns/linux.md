@@ -8,6 +8,12 @@
 
 ![](img-linux/003.png)
 
+- Ahora en la MV Cliente, pondremos como servidor DNS a nuestro servidor para que haya comunicación entre ellos.
+
+![](img-linux/027.png)
+
+![](img-linux/028.png)
+
 ### **1. Indicaremos a Linux que el servidor DNS es él mismo ``(/etc/resolv.conf)``**
 
 - `sudo nano /etc/resol.conf`
@@ -40,6 +46,42 @@
 
 ![](img-linux/032.png)
 
-### **3. Configuramos como DNS maestro instalando un dominio ficticio y añadiendo configuración para búsquedas (/etc/bind/named.conf.local)**
+### **3. Configuramos como DNS maestro instalando un dominio ficticio y añadiendo configuración para búsquedas ``(/etc/bind/named.conf.local)``**
 
-- Zona directa
+![](img-linux/033.png)
+
+### **4. Creamos y configuramos un archivo de ZBD y otro de ZBI**
+
+- **Zona de búsqueda directa**
+
+![](img-linux/034.png)
+
+- Guardamos la configuración y comrpobamos que la sintaxis está correcta.
+
+![](img-linux/015.png)
+
+- **Zona de búsqueda inversa**
+
+![](img-linux/025.png)
+
+- Guardamos la configuración y comrpobamos que la sintaxis está correcta.
+
+![](img-linux/022.png)
+
+### **5. Comprobaremos de que se resuelven todos los nombres desde la consola del servidor**
+
+- ZBD
+
+![](img-linux/017.png)
+
+![](img-linux/019.png)
+
+- Algunos nombres no dan ping, ya que son ficticios.
+
+- ZBI
+
+![](img-linux/023.png)
+
+### **6. Comprobamos desde el Cliente que se resuelven correctamente los nombres dados de alta en el servidor**
+
+![](img-linux/030.png)
