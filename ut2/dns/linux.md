@@ -64,7 +64,7 @@
 
 ![](img-linux/034.png)
 
-- Guardamos la configuración y comrpobamos que la sintaxis está correcta.
+- Guardamos la configuración y comprobamos que la sintaxis está correcta.
 
 ![](img-linux/015.png)
 
@@ -72,7 +72,7 @@
 
 ![](img-linux/025.png)
 
-- Guardamos la configuración y comrpobamos que la sintaxis está correcta.
+- Guardamos la configuración y comprobamos que la sintaxis está correcta.
 
 ![](img-linux/022.png)
 
@@ -118,6 +118,9 @@
 
 - **Comprobaciones:**
 
+- Para hacer la comprobación desactivaremos el servicio bind9 en el servidor Master, para que el servidor Slave nos haga de soporte.
+
+- Después vamos al cliente y comprobamos los nombres y también pondremos nslookup para comprobar de que el servidor DNS Slave está actuando.
 
 ![](img-linux/048.png)
 
