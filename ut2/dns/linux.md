@@ -1,5 +1,11 @@
 # **Práctica Servidor DNS Linux bind9**
 
+|  MV    | Equipo     | IP|
+| :------------- | :------------- | :------------- |
+| Servidor DNS Master      | peraza23u2       | 172.19.23.31|
+| Servidor DNS Slave      | peraza23u3       | 172.19.23.32|
+|Cliente      | peraza23u1       | 172.19.23.50|
+
 ### **0. Configuración de red de la MV Servidor DNS**
 
 - Editaremos el siguiente fichero para que nuestro Servidor DNS, este configurado con IP estática, además añadiremos que él es el propio DNS.
@@ -87,5 +93,35 @@
 ### **6. Comprobamos desde el Cliente que se resuelven correctamente los nombres dados de alta en el servidor**
 
 ![](img-linux/030.png)
+
+### **7. Investigación: Cloanremos la MV del servidor bind9 y configura el nuevo linux para que bind9 se comporte como un servidor esclavo (slave) del principal (master).Comprueba el funcionamiento entre maestro, esclavo y cliente.**
+
+- **Slave**
+
+![](img-linux/052.png)
+
+![](img-linux/053.png)
+
+![](img-linux/035.png)
+
+- **Master**
+
+![](img-linux/054.png)
+
+![](img-linux/038.png)
+
+![](img-linux/046.png)
+
+- **Cliente**
+
+![](img-linux/051.png)
+
+- **Comprobaciones:**
+
+
+![](img-linux/048.png)
+
+![](img-linux/055.png)
+
 
 ***Hasta aquí queda por finalizada la actividad.***
