@@ -79,6 +79,12 @@
 
 ## **8. Crearemos un directorio virtual y dentro debe contener 3 subcarpetas con páginas html diferentes.**
 
+![](img/057.png)
+
+![](img/058.png)
+
+![](img/059.png)
+
 ![](img/048.png)
 
 ![](img/056.png)
