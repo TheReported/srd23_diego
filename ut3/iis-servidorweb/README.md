@@ -58,8 +58,6 @@
 
 ## **6. Crearemos una página web HTML como página principal y comprobaremos el acceso desde el propio servidor y cliente.**
 
-![](img/038.png)
-
 ![](img/039.png)
 
 ![](img/040.png)
