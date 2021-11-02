@@ -26,6 +26,78 @@
 
 ![](img/016.png)
 
+### **4. Configuramos el nuevo sitio para que se pueda acceder (sólo) como sitio web seguro (https) con un Certificado Autofirmado.**
+
+![](img/008.png)
+
+![](img/007.png)
+
+![](img/017.png)
+
+![](img/018.png)
+
+![](img/019.png)
+
+![](img/020.png)
+
+### **5. Crearemos un nuevo sitio seguro (tienda.miempresa.com) con la generación de un Certificado Digital a través de la aplicación OpenSSL. Para empezar, realizaremos la solicitud de un nuevo certificado de servidor para nuestro sitio seguro (crear fichero certreq.txt).**
+
+![](img/021.png)
+
+![](img/022.png)
+
+![](img/023.png)
+
+![](img/024.png)
+
+![](img/025.png)
+
+![](img/026.png)
+
+### **6. Descargar e instalar OpenSSL para Windows.**
+
+![](img/027.png)
+
+![](img/028.png)
+
+![](img/029.png)
+
+![](img/030.png)
+
+![](img/031.png)
+
+### **7. A través de OpenSSl genera un nuevo certificado de servidor, siguiendo los pasos que se detallan en tutorial web (y comprobando los ficheros generados en cada paso): generar una clave privada de la entidad certificadora, crear un certificado digital de la entidad certificadora y, finalmente, crear un certificado digital de nuestra web.**
+
+![](img/32.png)
+
+![](img/033.png)
+
+![](img/034.png)
+
+![](img/035.png)
+
+![](img/036.png)
+
+![](img/037.png)
+
+### **8. Importar el nuevo certificado de servidor creado para completar la petición pendiente en nuestro sitio seguro ‘tienda’.**
+
+![](img/086.png)
+
+![](img/087.png)
+
+![](img/088.png)
+
+![](img/089.png)
+
+![](img/090.png)
+
+### **9. Finalmente, accederemos mediante https a los sitios seguros desde el propio servidor y desde un cliente W7, aceptando los posibles problemas con la entidad certificadora.**
+
+![](img/091.png)
+
+![](img/092.png)
+
 ## **Carpetas privadas**
 
 ### **1. Crearemos una carpeta ``empleados``  (dentro de miEmpresa) y, dentro de esta, tres o cuatro subcarpetas personales con nombres de empleados y una, denominada común, a la que tendrán acceso todos los empleados, pero no otros usuarios sin identificar.**
