@@ -130,7 +130,7 @@
 
 ![](img/042.png)
 
- -**Empleado 2**
+ - **Empleado 2**
 
 ![](img/063.png)
 
