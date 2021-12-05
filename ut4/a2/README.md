@@ -1,6 +1,6 @@
 # **Informe FTP - Prácticas Windows y Linux**
 
-## - **Instalación y Configuración de un Servidor FTP - Windows**
+- ##  **Instalación y Configuración de un Servidor FTP - Windows**
 
 #### **1. Instalar Servicio FTP en Windows 2016 Server, a través de Agregar roles y características (IIS)**
 
@@ -195,3 +195,136 @@ No podremos escribir ni borrar nada, pero si leer.
 - Para ello pondremos un puerto diferente a casa sitio web.
 
 ![](img/windows/053.png)
+
+- ##  **Instalación y Configuración de un Servidor FTP - Linux**
+
+#### **0. Preparativos**
+
+- Ip del servidor:
+
+![](img/linux/011.png)
+
+- Editamos el fichero `/etc/hosts` del cliente.
+
+![](img/linux/014.png)
+
+#### **1. Instalamos el servicio SSH en el servidor de Linux**
+
+![](img/linux/001.png)
+
+#### **2. Creamos dos usuarios en el sistema, con diferentes privilegios y niveles de acceso al filesystem.**
+
+![](img/linux/005.png)
+
+![](img/linux/006.png)
+
+![](img/linux/007.png)
+
+![](img/linux/008.png)
+
+#### **3. Comprobamos, desde una máquina cliente, acceso de los usuarios mediante ssh.**
+
+![](img/linux/009.png)
+
+![](img/linux/010.png)
+
+#### **4. Tratar de ejecutar una aplicación gráfica del servidor de forma remota, desde el cliente, mediante ssh.**
+
+![](img/linux/012.png)
+
+![](img/linux/016.png)
+
+![](img/linux/013.png)
+
+![](img/linux/015.png)
+
+#### **5. Acceder, también desde el cliente, mediante sftp (ftp seguro, incluido en el paquete ssh) al sistema de ficheros del servidor y probar acceso, carga y descarga de archivos con ambos usuarios.**
+
+![](img/linux/017.png)
+
+![](img/linux/018.png)
+
+![](img/linux/019.png)
+
+#### **6. Realizar varias copias de archivos hacia / desde el servidor mediante scp, utilizando también los dos usuarios creados anteriormente.**
+
+![](img/linux/020.png)
+
+![](img/linux/021.png)
+
+![](img/linux/022.png)
+
+#### **7. Instalar el paquete proftpd.**
+
+![](img/linux/023.png)
+
+#### **8. Investigar y editar el fichero de configuración /etc/proftpd/proftpd.conf buscando información en Internet.**
+
+![](img/linux/024.png)
+
+![](img/linux/025.png)
+
+#### **9. Tratar de conectar al servicio ftp gestionado por proftpd tanto desde el servidor como desde un cliente.**
+
+- Cliente
+
+![](img/linux/026.png)
+
+- Servidor
+
+![](img/linux/027.png)
+
+#### **10. Desde la máquina cliente, probar el acceso al ftp mediante los usuarios creados y realizando diferentes operaciones de listado, subida y descarga de archivos.**
+
+![](img/linux/028.png)
+
+![](img/linux/029.png)
+
+#### **11. Informar sobre la configuración, uso y funcionamiento de proftpd.**
+
+- ProFTPd es un popular servidor FTP para Linux. ProFTPd es un programa que fue escrito para ser un software poderoso y configurable, por lo que no es necesariamente el servidor de FTP más liviano disponible, pero si el más conocido y el más usado. en servidores.
+
+- El archivo de configuración principal de proFTPd se encuentra en ``/etc/proftpd/proftpd.conf``. Desde aquí deberemos configurar la mayoría de los aspectos de nuestro servidor FTP.
+
+  - **AuthPAM off:** Para deshabilitar la autentificacion PAM, es decir para que no ´
+autentifique a los usuarios reales.
+
+  - **RequireValidShell off:** Requiere una Shell valida para iniciar secci ´ on. Las shell ´
+validas son las que estan en /etc/shells.
+
+  - **DefaultRoot ˜:** Para que cuando un usuario entra en el servidor ftp, no pueda
+salir de su home a drectorios superiores.
+
+  - **SQLBackend:** Con esta directiva indicamos el servidor de base de datos que
+vamos a utilizar. En nuestro caso mysql.
+
+  - **SQLAuthTypes:** En tipos de identificacion tenemos (entre otras) PlainText
+(texto plano), Crypt (como en el /etc/shadow) o Backend (utiliza el sistema
+propio de la base de datos). Aqu´ı depende de con que vayamos a cifrar las ´
+contrasenas en la base de datos. Si lo haces con CRYPT() usa Crypt, si usas ˜
+PASSWORD() usa Backend.
+
+  - **SQLAuthenticate:** Con esta directiva decimos quien tiene que identificarse
+en MySQL. Podemos seleccionar grupos o usuarios, yo me limito a decirque todos: on.
+
+  - **SQLConnectInfo:** Se indica los datos de la conexion a la base de datos.
+
+  - **SQLDefaultGID y SQLDefaultUID:** Indican, respectivamente, los GID y UID
+que se usan por defecto en caso de no poner nada en la tabla.
+
+  - **SQLMinUserGID y SQLMinUserUID:** Indican el UID y el GID m´ınimo que
+han de tener los usuarios para poder loguear
+
+  - **SQLGroupInfo:** Se indica el nombre de la tabla que posee la informacion de ´
+los grupos, as´ı como los nombres de los campos.
+
+  - **SQLUserInfo:** Se indica el nombre de la tabla que posse la informacion de los ´
+usuarios, as´ı como los nombres de los campos.
+
+  - **SQLUserWhereClause:** Indica una condicion a la hora de seleccionar los cam- ´
+pos. Nosotros la usamos para controlar si una cuenta esta activa o no.
+
+  - **SQLLogFile:** Se indica el archivo de log donde se guarda la informacion ge- ´
+nerada por el servidor al acceder a la base de datos.
+
+- Una vez allí, buscaremos la línea comentada «DefaultRoot» y la descomentamos borrando la almohadilla #. Esto nos va a permitir que cuando cada usuario acceda a su cuenta del FTP, estos accederán directamente a su carpeta «home» y no podrán salir de ese directorio.
