@@ -121,7 +121,7 @@
 
 [Volver](#0)
 
-### **Instalación y Configuración de hMailServer**
+### **Instalación y Configuración de hMailServer** <a id="2"></a>
 
 #### **1. En primer lugar, hay que desinstalar el servicio SMTP de Windows 2016 Server.**
 
