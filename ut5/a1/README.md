@@ -322,4 +322,16 @@ Vader
 
 ![](img/110.png)
 
-![](img/111.png)
+![](img/116.png)
+
+#### **11. Realiza prueba de envío y recepción de correos por medio de la lista de distribución.**
+
+![](img/117.png)
+
+![](img/118.png)
+
+![](img/119.png)
+
+Hasta aquí queda por concluida la actividad.
+
+[Volver](#0)
