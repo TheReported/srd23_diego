@@ -28,7 +28,11 @@
     + [2.5 Acceder desde el servidor y cliente al gestor de correo SquirrelMail vía HTTP.](#2.5)
     + [2.6 Comprobamos que los mensajes enviados desde ambas cuentas se siguen encontrando en los respectivos buzones de los usuarios en la carpeta `/var/mail`.](#2.6)
   + [3. Instalar servicio POP3](#3)
-
+    + [3.1 Instalar servicio POP3](#3.1)
+    + [3.2 Comprobar servicio (y puerto) POP3 activo y a la escucha](#3.2)
+    + [3.3 Configurar Evolution en  máquina cliente para que acceda a la recepción de correo a través del protocolo POP3 instalado en el servidor.](#3.3)
+    + [3.4 Enviar y recibir correos entre las dos cuentas creadas desde el cliente y utilizando el gestor de correo del cliente.](#3.4)
+    + [3.5 Comprobamos la carpeta `/var/mail` en el servidor.](#3.5)
 ### **<font color="#F06F69"> 1. Instalar servicio SMTP en Linux, utilizando el servidor Postfix. </font>** <a id="1"></a>
 
 - **1.1 Descargar, instalar y configurar Postfix.** <a id="1.1"></a>
@@ -159,6 +163,68 @@
 
 ### **<font color="#F06F69"> 3. Instalar servicio POP3 </font>** <a id="3"></a>
 
+- **3.1 Instalar servicio POP3** <a id="3.1"></a>
 
+  ![](img/39.png)
+
+- **3.2 Comprobar servicio (y puerto) POP3 activo y a la escucha** <a id="3.2"></a>
+
+  ![](img/40.png)
+
+  ![](img/41.png)
+
+  ![](img/42.png)
+
+- **3.3 Configurar Evolution en  máquina cliente para que acceda a la recepción de correo a través del protocolo POP3 instalado en el servidor.** <a id="3.3"></a>
+
+  ![](img/43.png)
+
+  ![](img/44.png)
+
+  ![](img/49.png)
+
+  ![](img/70.png)
+
+  ![](img/48.png)
+
+  - Estos pasos también los haremos con otra cuenta.
+
+    ![](img/50.png)
+
+  - Vemos que ahora tenemos dos cuentas de correo dentro de Evolution.
+
+    ![](img/51.png)
+
+- **3.4 Enviar y recibir correos entre las dos cuentas creadas desde el cliente y utilizando el gestor de correo del cliente.** <a id="3.4"></a>
+
+  - Prueba de correo del usuario Diego a Pepe.
+
+    ![](img/59.png)
+
+    ![](img/52.png)
+
+    ![](img/53.png)
+
+    ![](img/54.png)
+
+  - Prueba de correo del usuario Pepe a Diego.
+
+    ![](img/59.png)
+
+    ![](img/57.png)
+
+    ![](img/58.png)
+
+- **3.5 Comprobamos la carpeta `/var/mail` en el servidor.** <a id="3.5"></a>
+
+  - Usuario Diego
+
+    ![](img/60.png)
+
+  - Usuario Pepe
+
+    ![](img/55.png)
+
+    ![](img/56.png)
 
 [Volver](#0)
