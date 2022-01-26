@@ -4,8 +4,10 @@
 <br>
 ***Curso:*** 2º ASIR
 
-## **Índice** <a id="0"></a>
+  ![](img/79.png)
 
+## **Índice** <a id="0"></a>
+  + [Introducción](#00)
   + [1. Comprobar que en tu servidor Windows 2016 están instalados y funcionan correctamente: IIS, PHP, MySQL y phpMyAdmin.](#1)
   + [2. Descargar e instalar el servidor de mensajería instantánea OpenFire para Windows.](#2)
   + [3. Crear una base de datos en blanco en MySqQL a través de phpMyAdmin y recordar nombre de la BD, así como usuario y contraseña con privilegios.](#3)
@@ -15,6 +17,10 @@
   + [7. Una vez instalado el servidor OpenFire, vamos a descargar e instalar un cliente de Mensajería, en este caso Spark.](#7)
   + [8. Ahora vamos a crear dos nuevos usuarios en OpenFire (además del administrador) para poder mantener una conversación entre cliente y servidor](#8)
   + [9. Comprobamos el funcionamiento de Spark](#9)
+
+### **Introducción** <a id="00"></a>
+
+- Openfire es un sistema de mensajería instantánea, hecho en java y que utiliza el protocolo XMPP, con él podrás tener tu propio servidor de mensajería, puedes administrar a tus usuarios, compartir archivos, auditar mensajes, mensajes offline, mensajes broadcast, grupos, etc y además contiene plugins gratuitos con diferentes funciones extras.
 
 ### **1. Comprobar que en tu servidor Windows 2016 están instalados y funcionan correctamente: IIS, PHP, MySQL y phpMyAdmin.** <a id="1"></a>
 
