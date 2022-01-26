@@ -152,11 +152,11 @@
 
   ![](img/42.png)
 
-- Veremos en la base de datos de openfire que hemos creado nosotros, que el usuario que se ha guardado es el ``admin``, en vez de ``admin_diego``.
+- Comprobamos en la base de datos de Openfire que hemos creado nosotros, que el usuario que se ha guardado es el ``admin``, en vez de ``admin_diego``. 
 
   ![](img/44.png)
 
-- La verdad que nose el porque pero inicaremos sesión con el nombre de usuario ``admin`` y la contraseña que pusimos en el paso final de la cuenta del administrador.
+-  Inicaremos sesión con el nombre de usuario ``admin`` y la contraseña que pusimos en el paso final de la cuenta del administrador.
 
   ![](img/47.png)
 
