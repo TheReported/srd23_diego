@@ -135,9 +135,15 @@
 
 ##### **4.1 Incluir nuevos usuarios** <a id="4.1"></a>
 
+- Para incluir nuevos usuarios, tendremos que ir al Inicio y darle click a `Import Subscribers`.
+
   ![](img/23.png)
 
+- Incluimos los usuarios que queramos y le daremos a `Import emails`.
+
   ![](img/24.png)
+
+- Vemos que se han incluido los usuarios correctamente.
 
   ![](img/25.png)
 
