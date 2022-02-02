@@ -4,6 +4,8 @@
 <br>
 ***Curso:*** 2º ASIR
 
+  ![](img/58.png)
+
 ## **Índice** <a id="0"></a>
 
 + [1. Instalación de la aplicación phpList en un entorno Ubuntu Server con Apache, php y MySQL.](#1)
