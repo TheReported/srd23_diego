@@ -56,7 +56,7 @@
 
     ![](img/13.png)
 
-- Una vez dentro del programa, vemos que en la carpeta `File resources -> MediaRoot` tenemos dos archivos de prueba. En esta carpeta podremos poner los videos que queramos pero solo se mostrarán los videos que tengan de formato `.avi`.
+- Una vez dentro del programa, vemos que en la carpeta `File resources -> MediaRoot` tenemos dos archivos de prueba. En esta carpeta podremos poner los videos que queramos.
 
     ![](img/14.png)
 
