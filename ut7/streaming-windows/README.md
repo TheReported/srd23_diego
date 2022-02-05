@@ -18,6 +18,8 @@
 
   ![](img/2.png)
 
+- Seleccionamos el destino que queramos para extraer los archivos. En mi caso puse `C:\UMediaServer`.
+
   ![](img/3.png)
 
 - Vamos a la carpeta donde se ha descomprimido todos los archivos y daremos click al ejecutable.
