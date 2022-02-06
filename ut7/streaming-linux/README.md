@@ -4,14 +4,17 @@
 <br>
 ***Curso:*** 2º ASIR
 
+  ![](img/42.png)
+
 ## **Índice** <a id="0"></a>
 
   + [1. Instalación y configuración de IceCast](#1)
   + [2. Instalación y configuración de Vorbis Ices2](#2)
   + [3. Comrpobamos su funcionamiento desde el servidor](#3)
   + [4. Comprobamos su funcionamiento desde el cliente](#4)
-  + [5. Investigación](#5)
-
+  + [5. Investigación de Gerbera](#5)
+    + [5. 1 Instalación y configuración de Gerbera en el servidor.](#5.1)
+    + [5.2 Comprobamos su funcionamiento.](#5.2)
 
 ### **1. Instalación y configuración de IceCast** <a id="1"></a>
 
@@ -113,6 +116,52 @@
 
 [Volver](#0)
 
-### **5. Investigación** <a id="5"></a>
+### **5. Investigación de Gerbera** <a id="5"></a>
+
+- En principio busqué información sobre el programa `GMedia Server`, pero era muy antiguo y no me funcionaba. Entonces descubrí otro programa que es parecido.
+
+  ![](img/30.png)
+
+  ![](img/43.png)
+
+- **Gerbera** es un potente servidor de medios **UPnP** (Universal Plug and Play) rico en características con una interfaz de usuario web agradable e intuitiva.
+
+  ![](img/41.png)
+
+- Nos va permitir transmitir medios digitales (vídeos, imágenes, audio, etc.) a través de una red doméstica y reproducirlo en diferentes tipos de dispositivos compatibles con **UPnP**, desde teléfonos móviles a tabletas y muchos más.
+
+#### **5. 1 Instalación y configuración de Gerbera en el servidor.** <a id="5.1"></a>
+
+- Instalamos el programa.
+
+  ![](img/32.png)
+
+- Iniciamos y habilitamos Gerbera. Además comprobamos el estado.
+
+  ![](img/33.png)
+
+- Editamos el fichero de configuración que se encuentra en `/etc/gerbera/config.xml`.
+
+  ![](img/35.png)
+
+  ![](img/34.png)
+
+- Reiniciamos el servicio.
+
+  ![](img/36.png)
+
+#### **5.2 Comprobamos su funcionamiento.** <a id="5.2"></a>
+
+- Entramos al navegador web y nos dirigimos a la siguiente URL: `IP-DEL-SERVIDOR:49152`(También puede ser un nombre DNS).
+
+  ![](img/37.png)
+
+- Añadimos algún archivo.
+
+  ![](img/39.png)
+
+- Comprobamos.
+
+  ![](img/38.png)
 
 [Volver](#0)
